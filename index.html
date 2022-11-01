@@ -7,6 +7,7 @@
     <title>Miguel Heredia</title>
     <meta name="description" content="Soporte Tecnico Profesional">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.reflowhq.com/v2/toolkit.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
 <script type="module">
   // Import the functions you need from the SDKs you need
@@ -44,7 +45,7 @@
                     <li class="nav-item" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-smooth-scroll="true"><a class="nav-link active" href="#landingpage">Pages</a></li>
                     <li class="nav-item" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-smooth-scroll="true"><a class="nav-link active" href="#faq">FAQ</a></li>
                     <li class="nav-item" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-smooth-scroll="true"><a class="nav-link active" href="#contacto">Contactar</a></li>
-                </ul><a class="btn btn-primary shadow" role="button" href="signup.html">Tienda</a>
+                </ul><button class="btn btn-primary shadow" type="button" data-bs-target="#offcanvas-1" data-bs-toggle="offcanvas">Tienda</button>
             </div>
         </div>
     </nav>
@@ -65,7 +66,7 @@
                         <div class="d-flex align-items-center" style="padding-bottom: 10px;"><a class="btn btn-primary btn-lg me-2" role="button" href="#windows" style="width: 100%;">Windows</a><a class="btn btn-outline-primary btn-lg" role="button" href="#macos" style="width: 100%;">MacOS</a></div>
                         <div class="d-flex align-items-center" style="padding-bottom: 10px;"><a class="btn btn-primary btn-lg me-2" role="button" href="#linux" style="width: 100%;">Linux</a><a class="btn btn-outline-primary btn-lg" role="button" href="#landingpage" style="width: 100%;">Pages</a></div>
                         <div class="d-flex align-items-center" style="padding-bottom: 10px;"><a class="btn btn-primary btn-lg me-2" role="button" href="#faq" style="width: 100%;">FAQ</a><a class="btn btn-outline-primary btn-lg" role="button" href="#contacto" style="width: 100%;">Contactame</a></div>
-                        <div style="padding-bottom: 10px;"><a class="btn btn-primary btn-lg me-2" role="button" href="#" style="width: 100%;">Tienda</a></div>
+                        <div style="padding-bottom: 10px;"><button class="btn btn-primary me-2" type="button" style="width: 100%;" data-bs-target="#offcanvas-1" data-bs-toggle="offcanvas">Tienda</button></div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -400,9 +401,19 @@
             </div>
         </div>
     </footer>
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" data-bs-backdrop="false" id="offcanvas-1" style="height: 100%;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Tienda</h5><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div data-reflow-type="product-list" data-reflow-layout="cards" data-reflow-order="date_desc"></div>
+        </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.reflowhq.com/v2/toolkit.min.js" data-reflow-store="1061414606"></script>
     <script src="assets/js/smart-forms.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/bold-and-bright.js"></script>
 </body>
 

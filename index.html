@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Page-Loader.css">
     <link rel="stylesheet" href="assets/css/Scroll-to-top-styles.css">
 <script type="module">
   // Import the functions you need from the SDKs you need
@@ -36,6 +37,11 @@
 </head>
 
 <body>
+    <div class="page-loader page-loader-show" style="background: #24285b;">
+        <div class="d-md-flex justify-content-md-center align-items-md-center page-loader__spinner">
+            <h1 class="flash animated infinite" style="color: var(--bs-warning);"><strong>MH</strong></h1>
+        </div>
+    </div>
     <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="#home"><span style="color: rgb(36,40,91);">Miguel Heredia</span></a>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -306,7 +312,7 @@
                         <div class="text-white p-4 p-md-5">
                             <h2 class="fw-bold text-white mb-3">Creacion de Landing Page</h2>
                             <p class="mb-4">Obtén tu página web + dominio + hosting incluido todo en un solo lugar. Utilizamos la tecnología Bootstrap. Todas nuestras páginas son "Responsiva".</p>
-                            <div class="my-3"><a class="btn btn-warning me-2 mt-2" role="button" href="#">Cotizar</a><a class="btn btn-light mt-2" role="button" href="#">Ver</a></div>
+                            <div class="my-3"><a class="btn btn-warning me-2 mt-2" role="button" href="#">Cotizar</a><a class="btn btn-light mt-2" role="button" href="#">Ver Catálogo</a></div>
                         </div>
                     </div>
                     <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-contain pt-5 pt-md-0" src="assets/img/illustrations/Website%20Creator-pana.svg"></div>
@@ -396,10 +402,10 @@
                 <div class="col-sm-6 col-md-6 text-lg-start d-flex flex-column">
                     <h3 class="fs-6 fw-bold">Servicios</h3>
                     <ul class="list-unstyled">
-                        <li><a href="#" style="color: rgb(255,255,255);">Windows</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">MacOS</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Linux</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Landing Page</a></li>
+                        <li><a href="#windows" style="color: rgb(255,255,255);">Windows</a></li>
+                        <li><a href="#macos" style="color: rgb(255,255,255);">MacOS</a></li>
+                        <li><a href="#linux" style="color: rgb(255,255,255);">Linux</a></li>
+                        <li><a href="#landingpage" style="color: rgb(255,255,255);">Landing Page</a></li>
                     </ul>
                 </div>
             </div>
@@ -557,6 +563,7 @@
     <script src="assets/js/smart-forms.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/bold-and-bright.js"></script>
+    <script src="assets/js/Page-Loader.js"></script>
     <script src="assets/js/Scroll-to-top.js"></script>
 </body>
 

@@ -7,9 +7,21 @@
         <loc>/</loc>
     </url>
     <url>
+        <loc>/linux.html</loc>
+    </url>
+    <url>
+        <loc>/macos.html</loc>
+    </url>
+    <url>
+        <loc>/pages.html</loc>
+    </url>
+    <url>
         <loc>/product.html</loc>
     </url>
     <url>
         <loc>/tienda.html</loc>
+    </url>
+    <url>
+        <loc>/windows.html</loc>
     </url>
 </urlset>

@@ -17,7 +17,7 @@
   "country": "País",
   "state": "Estado",
   "postcode": "Código postal",
-  "shipping_method": "Método de envío",
+  "shipping_method": "Seleccione el método del servicio.",
   "shipping_address": "Dirección",
   "pickup_at_store": "",
   "store": "Tienda",

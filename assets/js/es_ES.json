@@ -1,7 +1,7 @@
 {
   "locale": "en-US",
 
-  "shopping_cart": "Lista de Pedidos",
+  "shopping_cart": "",
   "cart": "Pedidos",
   "product": "Producto",
   "price": "Precio",
@@ -76,7 +76,7 @@
   "cart.left_in_stock": "{in_stock, plural, =0 {0 items left in stock} other {Only # left in stock.}}",
   "cart.max_product_qty": "Máximo de {max_quantity} por cliente",
   "cart.errors.unavailable": "No se puede cargar el carrito de compras.",
-  "cart.errors.empty": "Su cesta está vacía.",
+  "cart.errors.empty": "Su lista de pedidos está vacía.",
   "cart.errors.cannot_complete": "No se pudo completar el pago.",
   "cart.errors.vat_number_invalid": "El número de IVA no es válido o no se puede utilizar en transacciones transfronterizas.",
   "cart.errors.vat_number_validation_fail": "No se pudo validar el IVA.",

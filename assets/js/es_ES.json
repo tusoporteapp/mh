@@ -120,9 +120,9 @@
   "order_status.shipped": "Cotización enviada por WhatsApp",
   "order_status.ready_for_pickup": "Buscar equipo Computo.",
   "order_status.received": "Equipo Computo Recibido.",
-  "order_status.refunded": "Equipo Computo Entregado.",
+  "order_status.refunded": "Cotizacion Eliminada.",
   "order_status.cancelled": "Cotización Cancelada.",
-  "order_status.payment_failed": "pago fallido",
+  "order_status.payment_failed": "Pago fallido",
   "order_status.check_email": "Por favor revise su correo electrónico para la confirmación del pedido.",
 
   "store_unavailable": "La tienda no está disponible temporalmente."

@@ -48,6 +48,14 @@ Windows / MacOS / Linux">
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
+
+<script>
+window.onload = function()
+// Para internet Explorer
+{document.onselectstart = function(){return false;} 
+// Para Firefox
+document.onmousedown = function(){return false;}}
+</script>
 </head>
 
 <body>

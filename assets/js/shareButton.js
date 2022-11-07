@@ -9,7 +9,7 @@ shareButton.addEventListener("click", (event) => {
     navigator
       .share({
         // Defino un título para la ventana de compartir
-        title: "Comparte Esta Página en Tu Plataforma Favorita",
+        title: "Compartelo en Tu Plataforma Favorita",
 
         // Detecto la URL actual de la página 
         url:

@@ -1,0 +1,18 @@
+@media (min-width: 360px) {
+  .ref-products {
+    --ref-products-per-row: 2 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .ref-products {
+    --ref-products-per-row: 3 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .ref-products {
+    --ref-products-per-row: 4 !important;
+  }
+}
+

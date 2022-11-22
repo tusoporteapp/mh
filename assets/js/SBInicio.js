@@ -7,7 +7,7 @@ if(navigator.share) {
 
       navigator.share({
         title: "Comparte esta pagina donde quieras",
-        text: "Hola como estas, te comparto la pagina de Miguel Heredia, un tecnico computo confiable: ",
+        text: "Hola te recomiendo los servicios de Miguel Heredia",
         url:
             window.location.href
       })

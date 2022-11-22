@@ -87,27 +87,43 @@ document.oncontextmenu = function(){return false}
 </head>
 
 <body>
+    <div class="page-loader page-loader-show" style="background: rgb(255,255,255);">
+        <div class="text-center page-loader__spinner"><img class="img-fluid jello animated infinite" src="assets/img/Morado.png"><span class="spinner-border spinner-border-sm" role="status" style="color: rgb(40,46,94);font-size: 12px;"></span></div>
+    </div>
     <nav class="navbar navbar-light navbar-expand-lg sticky-top navbar-shrink py-3" id="mainNav">
-        <div class="container"><button class="btn btn-primary shadow d-none d-lg-inline" type="button" data-bs-target="#offcanvas-1" data-bs-toggle="offcanvas" style="background: #24285b;">Diagnosticar&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-gear swing animated infinite" style="color: #ffffff;">
-                    <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"></path>
-                    <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"></path>
-                </svg></button>
+        <div class="container"><button class="btn btn-primary shadow d-none d-lg-inline" type="button" data-bs-target="#offcanvas-1" data-bs-toggle="offcanvas" style="background: #24285b;">&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chat-right-quote swing animated infinite" style="color: #ffffff;font-size: 20px;">
+                    <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"></path>
+                    <path d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"></path>
+                </svg></button><span class="d-none d-lg-inline" data-reflow-type="view-cart" data-reflow-summary-type="dropdown" style="margin: 20px;"><span style="color: rgb(255,255,255);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cart-check" style="color: rgb(36,40,91);font-size: 20px;font-weight: bold;">
+                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                    </svg></span></span>
             <div class="d-flex align-items-center">
-                <div class="d-flex d-print-none d-sm-flex d-lg-none d-xl-none d-xxl-none align-items-center align-items-sm-center" style="background: #24285b;height: 74px;margin-bottom: -30px;margin-top: -30px;margin-right: -12px;margin-left: -12px;"><button class="btn btn-primary btn-sm" type="button" data-bs-target="#offcanvas-1" data-bs-toggle="offcanvas" style="height: 100%;width: 100%;">Diagnosticar&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-gear swing animated infinite" style="color: #ffffff;">
-                            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"></path>
-                            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"></path>
-                        </svg></button></div>
+                <div class="d-flex d-print-none d-sm-flex d-lg-none d-xl-none d-xxl-none align-items-center align-items-sm-center" style="background: #24285b;height: 74px;margin-bottom: -30px;margin-top: -30px;margin-right: -12px;margin-left: -12px;"><button class="btn btn-primary btn-sm" type="button" data-bs-target="#offcanvas-1" data-bs-toggle="offcanvas" style="height: 100%;width: 100%;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chat-right-quote swing animated infinite" style="color: #ffffff;font-size: 20px;">
+                            <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"></path>
+                            <path d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"></path>
+                        </svg></button><span data-reflow-type="view-cart" data-reflow-summary-type="dropdown" style="margin: 20px;"><span style="color: rgb(255,255,255);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cart-check" style="font-size: 20px;">
+                                <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
+                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                            </svg></span></span></div>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-smooth-scroll="true"><a class="nav-link d-lg-flex d-xl-flex align-items-lg-center align-items-xl-center" style="color: rgb(36,40,91);" href="servicios.html"><strong>SERVICIOS&nbsp;</strong></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#landingpage" style="color: rgb(36,40,91);"><strong>PAGES</strong></a></li>
                     <li class="nav-item" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-smooth-scroll="true"><a class="nav-link" href="#faq" style="color: rgb(36,40,91);"><strong>FAQ</strong></a></li>
                     <li class="nav-item" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-smooth-scroll="true"><a class="nav-link" href="#contacto" style="color: rgb(36,40,91);"><strong>CONTACTO</strong></a></li>
                 </ul>
             </div><a class="navbar-brand d-flex align-items-center" href="index.html"><img class="img-fluid" src="assets/img/Morado.png" style="width: 31px;"><span style="color: rgb(36,40,91);">Miguel Heredia</span></a>
         </div>
     </nav>
+    <main>
+        <section>
+            <div class="container" style="margin-top: 10px;">
+                <div data-reflow-type="product-search" data-reflow-search-url="index.html" data-reflow-show-button="true" style="margin-bottom: 10px;"></div>
+                <div data-reflow-type="category-list" data-reflow-layout="horizontal-bar" data-reflow-category-link="/info.html?category={id}" style="margin-bottom: 10px;"></div><button class="btn btn-primary" id="button-share" type="button" style="width: 100%;margin-bottom: 10px;">COMPARTIR SERVICIOS</button>
+                <div data-reflow-type="product-list" data-reflow-addtocart-text="Ver+" data-reflow-shoppingcart-url="cart.html" data-reflow-layout="cards" data-reflow-order="date_desc" data-reflow-product-link="/info.html?product={id}" data-reflow-show="image,name,pagination,add-to-cart"></div>
+            </div>
+        </section>
+    </main>
     <section class="d-lg-flex d-xl-flex justify-content-lg-center justify-content-xl-center" style="padding-top: 10px;padding-bottom: 10px;background: #24285b;">
         <div class="col d-flex d-print-none d-md-none d-lg-none d-xl-none d-xxl-none justify-content-center">
             <div class="text-nowrap animated-text noSelect" style="background: rgba(255,255,255,0);border-style: none;">
@@ -124,244 +140,6 @@ document.oncontextmenu = function(){return false}
             </div>
         </div>
     </section>
-    <section class="d-xl-flex align-items-xl-end py-5" id="home" style="margin-top: -80px;">
-        <div class="container py-4 py-xl-5" style="padding-left: 24px;padding-right: 24px;">
-            <hr class="invisible">
-            <div class="row gy-4 gy-md-0">
-                <div class="col-md-6 text-center text-md-start d-none d-print-flex d-sm-none d-md-none d-lg-flex d-xl-flex d-xxl-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
-                    <div style="max-width: 350px;">
-                        <h1 class="display-6 fw-bold mb-4" style="color: rgb(36,40,91);">Tu Soporte Técnico&nbsp;<span class="underline">Confiable</span></h1>
-                        <p class="my-4">Elige el sistema operativo que estás usando actualmente para que puedas ver los servicios que presto para él.<br></p><button class="btn btn-primary disabled d-xl-flex justify-content-xl-center align-items-xl-center flash animated" type="button" disabled=""><script id="_waurxm">var _wau = _wau || []; _wau.push(["dynamic", "odo5ukooi0", "rxm", "24285bffffff", "small"]);</script><script async src="//waust.at/d.js"></script>EN LINEA</button>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center text-md-start d-flex d-print-none d-sm-flex d-md-flex d-lg-none d-xl-none d-xxl-none justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
-                    <div class="d-lg-none" style="padding-right: 20px;padding-left: 20px;">
-                        <h1 class="display-6 fw-bold mb-4" style="color: #24285b;">Tu Soporte Tecnico&nbsp;<span class="underline">Confiable</span></h1>
-                        <p class="my-4">Elige el sistema operativo que estas usando actualmente para que puedas ver los servicios que presto para el.</p>
-                        <div class="d-flex align-items-center" style="padding-bottom: 10px;"><a class="btn btn-outline-primary btn-lg" role="button" style="width: 100%;" href="servicios.html">SERVICIOS</a></div>
-                        <div class="d-flex align-items-center" style="padding-bottom: 10px;"><a class="btn btn-primary btn-lg me-2" role="button" href="#landingpage" style="width: 100%;">PAGES</a><a class="btn btn-outline-primary btn-lg" role="button" href="#faq" style="width: 100%;">FAQ</a></div>
-                        <div class="d-flex align-items-center" style="padding-bottom: 10px;"><button class="btn btn-outline-primary btn-lg flash animated" id="button-share" type="button" style="width: 100%;border-style: none;">COMPARTIR PAGINA</button></div>
-                    </div>
-                </div>
-                <div class="col-md-6 d-md-flex align-items-md-center">
-                    <div><img class="img-thumbnail img-fluid w-100 fit-cover" style="min-height: 300px;" src="assets/img/illustrations/Computer%20troubleshooting-pana.svg"></div>
-                </div>
-                <div class="col-lg-12 m-auto" style="padding-top: 16px;margin-top: 11px;padding-right: 24px;padding-left: 24px;">
-                    <h1 class="display-6 fw-bold mb-4" style="color: #24285b;">Lo&nbsp;<span class="underline">Nuevo</span></h1>
-                    <div class="fw-bold" data-reflow-type="product-list" data-reflow-perpage="1" data-reflow-order="date_desc" data-reflow-product-link="/info.html?product={id}" data-reflow-show="image,name,excerpt,price" style="margin-bottom: 10px;"></div><a href="servicios.html" style="color: rgb(36,40,91);"><strong>Ver mas &gt;</strong></a>
-                    <div class="text-center mt-5">
-                        <p class="mb-4" style="font-size: 1.6rem;color: rgb(36,40,91);">Más de&nbsp;<span class="bg-warning p-1" style="color: rgb(36,40,91);"><strong>300+</strong></span>&nbsp;&nbsp;Equipos cómputos arreglados.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <main>
-        <section class="d-xl-flex align-items-xl-end" id="windows">
-            <div class="container py-4 py-xl-5" style="padding-right: 24px;padding-left: 24px;">
-                <hr class="invisible">
-                <hr>
-                <div class="row">
-                    <div class="col-md-12 col-lg-12 col-xl-12 text-center">
-                        <h3 class="display-6 fw-bold pb-md-4" style="color: rgb(36,40,91);">Equipo cómputo con:&nbsp;<span class="underline">Windows</span><br></h3>
-                    </div>
-                </div>
-                <div class="row gy-4 gy-md-0">
-                    <div class="col-md-6 order-first order-md-last">
-                        <div><img class="img-thumbnail img-fluid w-100 fit-cover" style="min-height: 300px;" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4VlKM"></div>
-                    </div>
-                    <div class="col">
-                        <div class="accordion" role="tablist" id="accordion-5">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-5 .item-1" aria-expanded="false" aria-controls="accordion-5 .item-1">Formateo</button></h2>
-                                <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-5">
-                                    <div class="accordion-body">
-                                        <p class="mb-0">Eliminación completa del sistema operativo, y reinstalación del mismo.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-5 .item-2" aria-expanded="false" aria-controls="accordion-5 .item-2">Recuperación de Datos</button></h2>
-                                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-5">
-                                    <div class="accordion-body">
-                                        <p class="mb-0">Recupera documentos, fotos, videos, audios y archivos, que hayan sido borrados por accidente.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-5 .item-3" aria-expanded="false" aria-controls="accordion-5 .item-3">Mantenimiento</button></h2>
-                                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-5">
-                                    <div class="accordion-body">
-                                        <p class="mb-0">Mantenimiento completo del Sistema mediante software y Hardware.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-5 .item-4" aria-expanded="false" aria-controls="accordion-5 .item-4">Licencias OEM</button></h2>
-                                <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-5">
-                                    <div class="accordion-body">
-                                        <p class="mb-0">Ventas de Licencias para Windows, Office y Antivirus.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-5 .item-5" aria-expanded="false" aria-controls="accordion-5 .item-5">Instalar Programas</button></h2>
-                                <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion-5">
-                                    <div class="accordion-body">
-                                        <p class="mb-0">Instalación de programas para Windows 7/8/8.1/10/11.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-5 .item-6" aria-expanded="false" aria-controls="accordion-5 .item-6">Instalación de Windows</button></h2>
-                                <div class="accordion-collapse collapse item-6" role="tabpanel" data-bs-parent="#accordion-5">
-                                    <div class="accordion-body">
-                                        <p class="mb-0">Instalación limpia de un sistema operativo Windows. ( Se le hace recomendaciones, pero usted elige cuál versión desea)<br></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="d-xl-flex align-items-xl-end" id="macos">
-            <div class="container py-4 py-xl-5" style="padding-right: 24px;padding-left: 24px;">
-                <hr class="invisible">
-                <hr>
-                <div class="row">
-                    <div class="col-md-12 col-lg-12 d-md-flex justify-content-md-center">
-                        <h3 class="display-6 fw-bold text-center d-sm-flex justify-content-sm-center pb-md-4" style="color: rgb(36,40,91);">Equipo cómputo con:&nbsp;<span class="underline">MacOS</span><br></h3>
-                    </div>
-                </div>
-                <div class="row gy-4 gy-md-0">
-                    <div class="col-md-6 order-first order-md-last">
-                        <div style="border-radius: 10px;"><img class="img-thumbnail img-fluid w-100 fit-cover" style="min-height: 300px;" src="https://www.apple.com/v/macbook-pro-13/o/images/overview/macos__3zitq287xeae_large_2x.png"></div>
-                    </div>
-                    <div class="col">
-                        <div class="accordion" role="tablist" id="accordion-3">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-1" aria-expanded="false" aria-controls="accordion-3 .item-1">Formateo</button></h2>
-                                <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-3">
-                                    <div class="accordion-body">
-                                        <p class="mb-0">Eliminación completa del sistema operativo, y reinstalación del mismo.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-2" aria-expanded="false" aria-controls="accordion-3 .item-2">Recuperación de Datos</button></h2>
-                                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-3">
-                                    <div class="accordion-body">
-                                        <p class="mb-0">Recupera documentos, fotos, videos, audios y archivos, que hayan sido borrados por accidente.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-3" aria-expanded="false" aria-controls="accordion-3 .item-3">Mantenimiento</button></h2>
-                                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-3">
-                                    <div class="accordion-body">
-                                        <p class="mb-0">Mantenimiento completo del Sistema mediante software y Hardware.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-4" aria-expanded="false" aria-controls="accordion-3 .item-4">Instalar Programas</button></h2>
-                                <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-3">
-                                    <div class="accordion-body">
-                                        <p class="mb-0">Instalación de programas para MacOS.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-5" aria-expanded="false" aria-controls="accordion-3 .item-5">Instalación de MacOS</button></h2>
-                                <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion-3">
-                                    <div class="accordion-body">
-                                        <p class="mb-0">Instalación limpia de un sistema operativo MacOS. (Se le hace recomendaciones, pero usted elige cuál versión desea)</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="d-xl-flex align-items-xl-end" id="linux">
-            <div class="container py-4 py-xl-5" style="padding-right: 24px;padding-left: 24px;">
-                <hr class="invisible">
-                <hr>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="display-6 fw-bold text-center pb-md-4" style="color: rgb(36,40,91);">Equipo cómputo con:&nbsp;<span class="underline">Linux</span><br></h3>
-                    </div>
-                </div>
-                <div class="row gy-4 gy-md-0">
-                    <div class="col">
-                        <div class="accordion" role="tablist" id="accordion-2">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-1" aria-expanded="false" aria-controls="accordion-2 .item-1">Formateo</button></h2>
-                                <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-2">
-                                    <div class="accordion-body">
-                                        <p class="mb-0">Eliminación completa del sistema operativo, y reinstalación del mismo.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-2" aria-expanded="false" aria-controls="accordion-2 .item-2">Recuperación de Datos</button></h2>
-                                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-2">
-                                    <div class="accordion-body">
-                                        <p class="mb-0">Recupera documentos, fotos, videos, audios y archivos, que hayan sido borrados por accidente.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-3" aria-expanded="false" aria-controls="accordion-2 .item-3">Mantenimiento</button></h2>
-                                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-2">
-                                    <div class="accordion-body">
-                                        <p class="mb-0">Mantenimiento completo del Sistema mediante software y Hardware.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-4" aria-expanded="false" aria-controls="accordion-2 .item-4">Instalar Programas</button></h2>
-                                <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-2">
-                                    <div class="accordion-body">
-                                        <p class="mb-0">Instalación de programas de Linux y (Windows) "algunos programas de Windows no son compatibles".</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-5" aria-expanded="false" aria-controls="accordion-2 .item-5">Instalación de Linux</button></h2>
-                                <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion-2">
-                                    <div class="accordion-body">
-                                        <p class="mb-0">Instalación limpia de un sistema operativo Linux. (Se le hace recomendaciones, pero usted elige cuál distro desea)</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 order-first order-md-last">
-                        <div style="border-radius: 10px;"><img class="img-thumbnail img-fluid w-100 fit-cover" style="min-height: 300px;" src="https://assets.zorincdn.com/zorin.com/images/computers/laptopwithlinux/Clevo-NJ70CU.jpg"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="d-xl-flex align-items-xl-end py-4 py-xl-5" id="landingpage" style="background: #24285b;">
-            <div class="container">
-                <hr class="invisible">
-                <div class="bg-primary border rounded border-0 border-primary overflow-hidden" style="background: #24285b;">
-                    <div class="row g-0">
-                        <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <div class="text-white p-4 p-md-5">
-                                <h2 class="fw-bold text-white mb-3">Creacion de Landing Page</h2>
-                                <p class="mb-4">Obtén tu página web + dominio + hosting incluido todo en un solo lugar. Utilizamos la tecnología Bootstrap. Todas nuestras páginas son "Responsiva".</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-contain pt-5 pt-md-0" src="assets/img/illustrations/Website%20Creator-pana.svg"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
     <section id="faq" class="py-4 py-xl-5 mb-5">
         <div class="container">
             <hr class="invisible">
@@ -444,10 +222,10 @@ document.oncontextmenu = function(){return false}
                 <div class="col-sm-6 col-md-6 text-lg-start d-flex flex-column">
                     <h3 class="fs-6 fw-bold">Servicios</h3>
                     <ul class="list-unstyled">
-                        <li><a href="#windows" style="color: rgb(255,255,255);">Windows</a></li>
-                        <li><a href="#macos" style="color: rgb(255,255,255);">MacOS</a></li>
-                        <li><a href="#linux" style="color: rgb(255,255,255);">Linux</a></li>
-                        <li><a href="#landingpage" style="color: rgb(255,255,255);">Landing Page</a></li>
+                        <li><a style="color: rgb(255,255,255);">Windows</a></li>
+                        <li><a style="color: rgb(255,255,255);">MacOS</a></li>
+                        <li><a style="color: rgb(255,255,255);">Linux</a></li>
+                        <li><a style="color: rgb(255,255,255);">Landing Page</a></li>
                     </ul>
                 </div>
             </div>

@@ -86,36 +86,38 @@ document.oncontextmenu = function(){return false}
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top navbar-shrink py-3" id="mainNav">
-        <div class="container"><button class="btn btn-primary shadow d-none d-lg-inline" type="button" data-bs-target="#offcanvas-1" data-bs-toggle="offcanvas">Diagnosticar&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-gear swing animated infinite" style="color: #ffffff;">
-                    <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"></path>
-                    <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"></path>
-                </svg></button>
+    <div class="page-loader page-loader-show" style="background: rgb(255,255,255);">
+        <div class="text-center page-loader__spinner"><img class="img-fluid jello animated infinite" src="assets/img/Morado.png"><span class="spinner-border spinner-border-sm" role="status" style="color: rgb(40,46,94);font-size: 12px;"></span></div>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-lg sticky-top navbar-shrink py-3" id="mainNav">
+        <div class="container"><button class="btn btn-primary shadow d-none d-lg-inline" type="button" data-bs-target="#offcanvas-1" data-bs-toggle="offcanvas" style="background: #24285b;">&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chat-right-quote swing animated infinite" style="color: #ffffff;font-size: 20px;">
+                    <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"></path>
+                    <path d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"></path>
+                </svg></button><span class="d-none d-lg-inline" data-reflow-type="view-cart" data-reflow-summary-type="dropdown" style="margin: 20px;"><span style="color: rgb(255,255,255);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cart-check" style="color: rgb(36,40,91);font-size: 20px;font-weight: bold;">
+                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                    </svg></span></span>
             <div class="d-flex align-items-center">
-                <div class="d-flex d-print-none d-sm-flex d-lg-none d-xl-none d-xxl-none align-items-center align-items-sm-center" style="background: #24285b;height: 74px;margin-bottom: -30px;margin-top: -30px;margin-right: -12px;margin-left: -12px;"><button class="btn btn-primary btn-sm" type="button" data-bs-target="#offcanvas-1" data-bs-toggle="offcanvas" style="height: 100%;width: 100%;">Diagnosticar&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-gear swing animated infinite" style="color: #ffffff;">
-                            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"></path>
-                            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"></path>
-                        </svg></button></div><span data-reflow-type="view-cart" data-reflow-summary-type="sidebar" data-reflow-summary-position="left" data-reflow-shoppingcart-url="cart.html" style="margin-right: 20px;margin-left: 20px;"><span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-minecart-loaded" style="font-size: 24px;color: rgb(36,40,91);">
-                            <path d="M4 15a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM.115 3.18A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 14 12H2a.5.5 0 0 1-.491-.408l-1.5-8a.5.5 0 0 1 .106-.411zm.987.82 1.313 7h11.17l1.313-7H1.102z"></path>
-                            <path fill-rule="evenodd" d="M6 1a2.498 2.498 0 0 1 4 0c.818 0 1.545.394 2 1 .67 0 1.552.57 2 1h-2c-.314 0-.611-.15-.8-.4-.274-.365-.71-.6-1.2-.6-.314 0-.611-.15-.8-.4a1.497 1.497 0 0 0-2.4 0c-.189.25-.486.4-.8.4-.507 0-.955.251-1.228.638-.09.13-.194.25-.308.362H3c.13-.147.401-.432.562-.545a1.63 1.63 0 0 0 .393-.393A2.498 2.498 0 0 1 6 1z"></path>
-                        </svg></span></span>
+                <div class="d-flex d-print-none d-sm-flex d-lg-none d-xl-none d-xxl-none align-items-center align-items-sm-center" style="background: #24285b;height: 74px;margin-bottom: -30px;margin-top: -30px;margin-right: -12px;margin-left: -12px;"><button class="btn btn-primary btn-sm" type="button" data-bs-target="#offcanvas-1" data-bs-toggle="offcanvas" style="height: 100%;width: 100%;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chat-right-quote swing animated infinite" style="color: #ffffff;font-size: 20px;">
+                            <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"></path>
+                            <path d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"></path>
+                        </svg></button><span data-reflow-type="view-cart" data-reflow-summary-type="dropdown" style="margin: 20px;"><span style="color: rgb(255,255,255);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cart-check" style="font-size: 20px;">
+                                <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
+                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                            </svg></span></span></div>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-smooth-scroll="true"><a class="nav-link d-lg-flex d-xl-flex align-items-lg-center align-items-xl-center" style="color: rgb(36,40,91);" href="servicios.html"><strong>SERVICIOS&nbsp;</strong></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/#landingpage" style="color: rgb(36,40,91);"><strong>PAGES</strong></a></li>
-                    <li class="nav-item" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-smooth-scroll="true"><a class="nav-link" href="/#faq" style="color: rgb(36,40,91);"><strong>FAQ</strong></a></li>
-                    <li class="nav-item" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-smooth-scroll="true"><a class="nav-link" href="/#contacto" style="color: rgb(36,40,91);"><strong>CONTACTAR</strong></a></li>
-                </ul><a class="navbar-brand d-flex align-items-center" href="https://miguelheredia.com/"><img class="img-fluid" src="assets/img/Morado.png" style="width: 31px;"><span class="d-none d-sm-flex d-md-flex" style="color: rgb(36,40,91);">Miguel Heredia</span></a>
-            </div><a class="navbar-brand d-flex d-lg-none align-items-center" href="index.html"><img class="img-fluid" src="assets/img/Morado.png" style="width: 31px;"><span class="d-none d-sm-inline d-lg-none" style="color: rgb(36,40,91);">Miguel Heredia</span></a>
+                    <li class="nav-item" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-smooth-scroll="true"><a class="nav-link" href="#faq" style="color: rgb(36,40,91);"><strong>FAQ</strong></a></li>
+                    <li class="nav-item" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-smooth-scroll="true"><a class="nav-link" href="#contacto" style="color: rgb(36,40,91);"><strong>CONTACTO</strong></a></li>
+                </ul>
+            </div><a class="navbar-brand d-flex align-items-center" href="index.html"><img class="img-fluid" src="assets/img/Morado.png" style="width: 31px;"><span style="color: rgb(36,40,91);">Miguel Heredia</span></a>
         </div>
     </nav>
     <section class="d-xl-flex align-items-xl-end py-5" id="home">
-        <div class="container py-4 py-xl-5" style="padding-left: 24px;padding-right: 24px;">
-            <hr class="invisible">
+        <div class="container py-4 py-xl-5" style="padding-left: 24px;padding-right: 24px;margin-top: -70px;">
             <div class="row gy-4 gy-md-0">
-                <div class="col-lg-12" style="padding-top: 10px;">
-                    <h1 class="display-6 fw-bold mb-4" style="color: #24285b;"><span class="underline">Información de Servicio</span></h1><button class="btn btn-primary" id="button-share" type="button" style="width: 100%;margin-bottom: 10px;">COMPARTIR ESTE PRODUCTO</button>
+                <div class="col-lg-12" style="padding-top: 10px;"><button class="btn btn-primary" id="button-share" type="button" style="width: 100%;margin-bottom: 10px;">COMPARTIR ESTE PRODUCTO</button>
                     <div class="fw-bold" data-reflow-type="product" data-reflow-category-link="/servicios.html?category={id}" data-reflow-addtocart-text="Agregar a Cotizacion" data-reflow-shoppingcart-url="cart.html"></div>
                 </div>
             </div>
@@ -147,10 +149,10 @@ document.oncontextmenu = function(){return false}
                 <div class="col-sm-6 col-md-6 text-lg-start d-flex flex-column">
                     <h3 class="fs-6 fw-bold">Servicios</h3>
                     <ul class="list-unstyled">
-                        <li><a href="#windows" style="color: rgb(255,255,255);">Windows</a></li>
-                        <li><a href="#macos" style="color: rgb(255,255,255);">MacOS</a></li>
-                        <li><a href="#linux" style="color: rgb(255,255,255);">Linux</a></li>
-                        <li><a href="#landingpage" style="color: rgb(255,255,255);">Landing Page</a></li>
+                        <li><a style="color: rgb(255,255,255);">Windows</a></li>
+                        <li><a style="color: rgb(255,255,255);">MacOS</a></li>
+                        <li><a style="color: rgb(255,255,255);">Linux</a></li>
+                        <li><a style="color: rgb(255,255,255);">Landing Page</a></li>
                     </ul>
                 </div>
             </div>
@@ -172,7 +174,7 @@ document.oncontextmenu = function(){return false}
                         </svg></li>
                 </ul>
             </div>
-            <div class="text-muted d-flex justify-content-center align-items-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center pt-3"><img class="img-fluid jello animated infinite" src="assets/img/Artboard.webp" style="width: 40px;"></div>
+            <div class="text-muted d-flex justify-content-center align-items-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center pt-3"><img class="img-fluid" src="assets/img/Artboard.webp" style="width: 40px;"></div>
         </div>
     </footer>
     <main>

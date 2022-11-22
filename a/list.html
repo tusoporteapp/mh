@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.reflowhq.com/v2/toolkit.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
     <link rel="stylesheet" href="../assets/css/untitled.css">
 <script type="module">
   // Import the functions you need from the SDKs you need
@@ -52,23 +53,25 @@ document.oncontextmenu = function(){return false}
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg sticky-top navbar-shrink py-3" id="mainNav" style="height: 74.5938px;">
-        <div class="container"><a class="navbar-brand d-flex align-items-center"><img class="img-fluid" src="../assets/img/Morado.png" style="width: 31px;"><span style="color: rgb(36,40,91);">Miguel Heredia</span></a>
+    <section style="margin: 10px;">
+        <div class="container">
+            <div data-reflow-type="category-list" data-reflow-layout="horizontal-bar" data-reflow-category-link="/a/list.html?category={id}" style="margin-top: 10px;"></div>
+            <div data-reflow-type="product-list" data-reflow-layout="cards" data-reflow-order="date_desc" data-reflow-product-link="/a/info.html?product={id}" data-reflow-show="image,name,pagination" style="margin-top: 10px;margin-bottom: 50px;"></div>
+        </div>
+    </section>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-bottom navbar-shrink py-3" id="mainNav" style="height: 74.5938px;">
+        <div class="container">
+            <div data-reflow-type="product-search" data-reflow-search-url="list.html"></div>
             <div class="d-flex align-items-center">
-                <div class="d-flex align-items-center align-items-sm-center" style="height: 74px;margin-bottom: -30px;margin-top: -30px;margin-right: -12px;margin-left: -12px;"><span data-reflow-type="view-cart" data-reflow-summary-type="sidebar" data-reflow-summary-position="right" data-reflow-shoppingcart-url="cart.html" style="margin: 20px;"><span style="color: rgb(255,255,255);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cart-check" style="font-size: 20px;color: rgb(36,40,91);">
+                <div class="d-flex align-items-center align-items-sm-center" style="height: 74px;margin-bottom: -30px;margin-top: -30px;margin-right: -12px;margin-left: -12px;"><button class="btn btn-primary btn-sm" id="button-share" type="button" style="height: 100%;width: 100%;background: rgba(255,255,255,0);border-style: none;border-radius: -11px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-share swing animated infinite" style="color: #24285b;font-size: 20px;">
+                            <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"></path>
+                        </svg></button><span data-reflow-type="view-cart" data-reflow-summary-type="sidebar" data-reflow-summary-position="right" data-reflow-shoppingcart-url="cart.html" style="margin: 20px;"><span style="color: rgb(255,255,255);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cart-check" style="font-size: 20px;color: rgb(36,40,91);">
                                 <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
                                 <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
                             </svg></span></span></div>
             </div>
         </div>
     </nav>
-    <section style="margin: 10px;">
-        <div class="container"><button class="btn btn-primary" id="button-share" type="button" style="width: 100%;margin-bottom: 10px;">COMPARTIR SERVICIOS</button>
-            <div data-reflow-type="product-search" data-reflow-search-url="list.html" data-reflow-show-button="true"></div>
-            <div data-reflow-type="category-list" data-reflow-layout="horizontal-bar" data-reflow-category-link="/a/list.html?category={id}" style="margin-top: 10px;"></div>
-            <div data-reflow-type="product-list" data-reflow-layout="cards" data-reflow-order="date_desc" data-reflow-product-link="/a/info.html?product={id}" data-reflow-show="image,name,pagination" style="margin-top: 10px;margin-bottom: 50px;"></div>
-        </div>
-    </section>
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdn.reflowhq.com/v2/toolkit.min.js" data-reflow-store="1601425473" data-reflow-locale="../assets/js/es_ES.json"></script>

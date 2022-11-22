@@ -104,9 +104,9 @@
   "product_search.placeholder": "Buscar Productos",
 
   "add_to_cart.button_text": "Añadir al carrito",
-  "add_to_cart.success": "Producto añadido al carrito.",
+  "add_to_cart.success": "",
   "add_to_cart.error": "No se pudo agregar el producto al carrito",
-  "add_to_cart.see_cart": "Ver carrito",
+  "add_to_cart.see_cart": "",
   "add_to_cart.min_quantity_per_order": "El mínimo por pedido es {quantity}",
 
   "order_status.order": "Orden #{orderId}",

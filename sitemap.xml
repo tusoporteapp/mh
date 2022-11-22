@@ -10,15 +10,9 @@
         <loc>/a/list.html</loc>
     </url>
     <url>
-        <loc>/cart.html</loc>
-    </url>
-    <url>
         <loc>/estado.html</loc>
     </url>
     <url>
         <loc>/</loc>
-    </url>
-    <url>
-        <loc>/info.html</loc>
     </url>
 </urlset>
